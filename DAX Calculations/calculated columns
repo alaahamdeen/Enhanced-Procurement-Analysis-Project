@@ -1,0 +1,23 @@
+# DAX Calculations — Milestone 01
+
+This file documents all calculated columns and measures created
+to support procurement analysis.
+
+---
+
+## Calculated Columns
+
+### Unified Net Amount
+```DAX
+-- Converts Net Amount to the unified currency
+Unified Net Amount =
+'PO Report'[Net Amount] * RELATED ( 'exchange rate'[exchange rate] )
+
+  -- Converts Sales Tax to the unified currency
+Unified Sales Tax =
+'PO Report'[Sales Tax] * RELATED ( 'exchange rate'[exchange rate] )
+
+ -- Converts Sub Total to the unified currency
+Unified Subtotal =
+'PO Report'[Sub Total] * RELATED ( 'exchange rate'[exchange rate] )
+ 
