@@ -1,0 +1,60 @@
+-- Total confirmed procurement spend
+Actual Spend =
+CALCULATE (
+    SUM ( 'PO Report'[Unified Net Amount] ),
+    'PO Report'[Approval Status] = "Confirmed"
+)
+
+
+-- Expected spend for non-confirmed but approved POs
+Expected Spend =
+CALCULATE (
+    SUM ( 'PO Report'[Unified Net Amount] ),
+    'PO Report'[Approval Status] IN { "Approved", "Draft", "In Review" }
+)
+
+
+-- Average age of purchase orders in days
+Average PO Age (Days) =
+AVERAGE ( 'PO Report'[PO Age (days)] )
+
+
+-- Average value per purchase order
+Average PO Value =
+DIVIDE (
+    SUM ( 'PO Report'[Unified Net Amount] ),
+    COUNTA ( 'PO Report'[Purchase Order] )
+)
+
+
+-- Number of distinct projects for confirmed POs
+Number of Projects =
+CALCULATE (
+    DISTINCTCOUNT ( 'PO Report'[Project Id] ),
+    'PO Report'[Approval Status] = "Confirmed"
+)
+
+-- Number of distinct vendors
+Number of Vendors =
+DISTINCTCOUNT ( 'PO Report'[Vendor Account] )
+
+
+-- Confirmed spend that is overdue
+Total Overdue Amount =
+CALCULATE (
+    SUM ( 'PO Report'[Unified Net Amount] ),
+    'PO Report'[Approval Status] = "Confirmed",
+    'PO Report'[Is Overdue] = "Yes"
+)
+
+
+-- Confirmed spend overdue by more than 30 days
+Overdue Amount (> 30 Days) =
+CALCULATE (
+    SUM ( 'PO Report'[Unified Net Amount] ),
+    'PO Report'[Approval Status] = "Confirmed",
+    'PO Report'[Overdue >30 Days] = TRUE()
+)
+
+
+
