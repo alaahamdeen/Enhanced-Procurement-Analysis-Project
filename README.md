@@ -42,3 +42,6 @@ Enhanced procurement analysis project with currency normalization, improved anal
 - Spend is heavily concentrated in Project I, which is the highest-value project.
 - Procurement activity shows a high number of warehouse-related purchase orders for this vendor.
 - Further analysis is required to assess procurement efficiency and potential vendor dependency.
+
+ **Figure 1:** Initial vendor spend concentration across projects
+![Initial Vendor Spend Distribution] <img width="871" height="573" alt="Screenshot 2026-01-28 132456" src="https://github.com/user-attachments/assets/a83d54c0-5a87-49ed-ad52-300367fbd466" />
