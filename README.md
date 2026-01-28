@@ -29,3 +29,16 @@ Enhanced procurement analysis project with currency normalization, improved anal
 - Exploratory analysis of procurement activity
 - Vendor risk analysis
 - Purchasing efficiency metrics & insights
+
+
+-----------------------------------------------------------------------------
+
+## 🔍 Milestone 02 — Exploratory Analysis (In Progress)
+
+
+### Initial Vendor Concentration Observations
+
+- Vendor K represents a significant share of total confirmed spend compared to other vendors.
+- Spend is heavily concentrated in Project I, which is the highest-value project.
+- Procurement activity shows a high number of warehouse-related purchase orders for this vendor.
+- Further analysis is required to assess procurement efficiency and potential vendor dependency.
