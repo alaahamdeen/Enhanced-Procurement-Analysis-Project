@@ -1,0 +1,39 @@
+# Vendor Risk Assessment
+
+This section evaluates key vendors across three risk dimensions:
+- Financial Risk (spend concentration)
+- Operational Risk (purchase order delays)
+- Efficiency Risk (PO fragmentation)
+
+Risk levels are classified using relative benchmarks derived from the dataset.
+
+---
+
+## Risk Classification Rules
+
+### Financial Risk
+- 🔴 High: Spend ≥ 40%
+- 🟠 Medium: Spend between 15% and 39.99%
+- 🟢 Low: Spend < 15%
+
+### Operational Risk
+- 🔴 High: Overdue Rate ≥ 75%
+- 🟠 Medium: Overdue Rate ≥ Overall Average (66.57%)
+- 🟢 Low: Overdue Rate < Overall Average
+
+### Efficiency Risk
+- 🔴 High: Low average PO value combined with high PO count
+- 🟠 Medium: Moderate PO fragmentation
+- 🟢 Low: High average PO value and limited PO count
+
+---
+
+## Vendor Risk Summary
+
+| Vendor | Financial Risk | Operational Risk | Efficiency Risk | Key Rationale |
+|--------|----------------|------------------|----------------|--------------|
+| Vendor K |      🔴      |        🟢       |       🟠      | High spend concentration with relatively efficient delivery performance; moderate PO fragmentation. |
+| Vendor G |      🟠      |        🔴       |       🟢      | Moderate spend concentration with high overdue rate indicating vendor-specific operational risk. |
+| Vendor D |      🟠      |        🟠       |       🟢      | Moderate spend with overdue rate aligned to average; highly efficient PO sizing. |
+| Vendor F |      🟢      |        🟠       |       🔴      | Low spend concentration but significant PO fragmentation and mild operational delays. |
+| Vendor B |      🟢      |        🔴       |       🔴      | Minimal financial exposure but high overdue rate and inefficient purchasing patterns. |
