@@ -1,4 +1,4 @@
-# 📊 Dashboard Analysis — Procurement Risk Case Study
+#  Dashboard Analysis — Procurement Risk Case Study
 
 This section documents the Power BI dashboards developed for this project.
 Each dashboard page is designed to answer a **specific business question** and translate visual insights into **clear, actionable procurement decisions**.
