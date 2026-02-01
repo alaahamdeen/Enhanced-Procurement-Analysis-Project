@@ -63,9 +63,14 @@ This measure calculates the percentage of confirmed purchase orders that are ove
 
 It is used to assess operational performance and identify systemic payment delays.
 
-```DAX
-Overdue % =
-DIVIDE (
-    CALCULATE ( COUNTROWS ( 'PO Report' ), 'PO Report'[Is Overdue] = "Yes" ),
-    COUNTROWS ( 'PO Report' )
+Overdue% = DIVIDE(
+    CALCULATE(
+        COUNTROWS(
+            'PO Report'
+        ),
+        'PO Report'[Is Overdue]= "Yes"
+    ),
+    COUNTROWS(
+        'PO Report'
+    )
 )
