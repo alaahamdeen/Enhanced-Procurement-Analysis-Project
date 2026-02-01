@@ -1,3 +1,18 @@
+## Vendor Dimension Table
+
+A dedicated vendor dimension table was created to centralize vendor-level metrics and risk classifications.
+
+This approach improves:
+- Model clarity
+- Risk categorization consistency
+- Separation of analytical logic from transactional data
+
+### Risk Dimensions
+- Financial Risk: Based on spend concentration
+- Operational Risk: Based on overdue performance
+- Efficiency Risk: Based on PO fragmentation indicators
+
+
 # Vendor Risk Assessment
 
 This section evaluates key vendors across three risk dimensions:
