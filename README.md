@@ -61,12 +61,6 @@ Each vendor is evaluated across three dimensions:
 
 ---
 
-## 📈 Visual Analysis
-**Figure 1:** Initial vendor spend concentration across projects  
-![Initial Vendor Spend Distribution](link)
-
----
-
 ## 🔮 Next Steps
 - Expand vendor risk analysis across top suppliers
 - Build a vendor risk flagging system (Red / Yellow indicators)
