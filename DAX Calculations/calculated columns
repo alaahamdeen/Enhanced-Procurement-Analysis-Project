@@ -21,3 +21,14 @@ Unified Sales Tax =
 Unified Subtotal =
 'PO Report'[Sub Total] * RELATED ( 'exchange rate'[exchange rate] )
  
+## Adjusted Overdue > 30 Days
+
+An adjusted logic was introduced after identifying inconsistencies in the original overdue flag.
+
+The adjusted measure ensures accurate classification of overdue purchase orders exceeding 30 days, improving reliability of risk analysis.
+
+Adjusted Overdue>30 = IF(
+    'PO Report'[Is Overdue] = "No",
+     "False",
+    "True"
+)
